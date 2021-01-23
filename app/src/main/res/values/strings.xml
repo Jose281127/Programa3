@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="espacui">\u0009\u0009\u0009\u0009</string>
+    <string name="Base_url">https://pokeapi.co/api/v2/pokemon?limit=151</string>
+    <string name="Experiencia">Base experience:</string>
+    <string name="Height">Height:</string>
+    <string name="Weight">Weight:</string>
+    <string name="Tipos">Types:</string>
+    <string name="Gato">#</string>
+    <string name="esp">\u0009\u0009</string>
+    <string name="Error">Error connecting the service, check your connection and then press the Pokeball. If it doesn\'t work, quit the application and try later.</string>
+</resources>
