@@ -7,6 +7,8 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class MainActivity3 extends AppCompatActivity {
     MediaPlayer mp;
     @Override
@@ -19,6 +21,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     public void click(View view) {
         Intent intent=new Intent(this,MainActivity.class);
+        Animatoo.animateZoom(this);
         startActivity(intent);
         finish();
     }

@@ -17,6 +17,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.paquito.Pokemon.Pokemon;
 
 import org.json.JSONArray;
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements Response.ErrorLis
         progressBar.setVisibility(View.GONE);
         Intent intent=new Intent(this,MainActivity3.class);
         startActivity(intent);
+        Animatoo.animateZoom(this);
         finish();
 
     }
@@ -127,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements Response.ErrorLis
                    intent.setFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
 
                    startActivity(intent);
+                   Animatoo.animateSlideLeft(MainActivity.this);
                }
            });
 

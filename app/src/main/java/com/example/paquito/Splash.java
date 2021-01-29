@@ -12,7 +12,6 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
         Thread timer=new Thread(){
             public void run(){
                 try {
@@ -22,6 +21,7 @@ public class Splash extends AppCompatActivity {
                 }finally {
                     Intent intent=new Intent(Splash.this,MainActivity.class);
                     startActivity(intent);
+
                     finish();
                 }
             }
